@@ -28,23 +28,62 @@ import { getPermalink, getBlogPermalink, getHomePermalink } from '~/utils/permal
 			<ul class="flex flex-col pt-8 md:pt-0 md:flex-row md:self-center w-full md:w-auto text-xl md:text-base">
 				<li>
 					<a
-						class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
-						href="#">Pages</a
+						class="font-black hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
+						href={getHomePermalink()}
 					>
-				</li>
-				<li>
-					<a
-						class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
-						href={getPermalink('useful-resources-to-create-websites', 'post')}
-						>Resources
+						<Icon name="tabler:armchair" class="w-5 h-5" />O
 					</a>
 				</li>
 				<li>
 					<a
+						class="font-black hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
+						href={getHomePermalink()}
+					>
+						<Icon name="tabler:device-laptop" class="w-5 h-5" />W
+					</a>
+				</li>
+				<li>
+					<a
+						class="font-black hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
+						href={getHomePermalink()}
+					>
+						<Icon name="tabler:stack-2" class="w-5 h-5" />E
+					</a>
+				</li>
+				<li>
+					<a
+						class="font-black hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
+						href={getHomePermalink()}
+					>
+						<Icon name="tabler:rocket" class="w-5 h-5" />S
+					</a>
+				</li>
+				<li>
+					<a
+						class="font-black hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
+						href={getHomePermalink()}
+					>
+						<Icon name="tabler:current-location" class="w-5 h-5" />C
+					</a>
+				</li>
+				<!-- <li>
+					<a
 						class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
-						href={getBlogPermalink()}>Blog</a
+						href="#">Pages</a
+					>
+				</li> -->
+				<!-- <li>
+					<a
+						class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
+						href={getPermalink('useful-resources-to-create-websites', 'post')}>R</a
 					>
 				</li>
+				<li>
+					<a
+						class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
+						href={getBlogPermalink()}>B</a
+					>
+				</li> -->
 				<li class="md:hidden">
 					<a
 						class="font-bold hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
