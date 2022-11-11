@@ -8,6 +8,7 @@ import sitemap from '@astrojs/sitemap';
 import image from '@astrojs/image';
 import mdx from '@astrojs/mdx';
 import partytown from '@astrojs/partytown';
+import astroI18next from 'astro-i18next';
 
 import { remarkReadingTime } from './src/utils/frontmatter.js';
 
@@ -40,6 +41,7 @@ export default defineConfig({
 		partytown({
 			config: { forward: ['dataLayer.push'] },
 		}),
+		astroI18next(),
 	],
 
 	markdown: {

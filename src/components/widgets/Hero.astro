@@ -1,6 +1,10 @@
 ---
 import { Icon } from 'astro-icon';
 import Picture from '~/components/core/Picture.astro';
+import { t, changeLanguage } from 'i18next';
+import { Trans } from 'astro-i18next/components';
+
+// changeLanguage('en');
 ---
 
 <section>
@@ -21,7 +25,7 @@ import Picture from '~/components/core/Picture.astro';
 			</div> -->
 			<div class="text-center pb-10 md:pb-16 max-w-5xl mx-auto">
 				<h1 class="text-5xl md:text-[3.50rem] font-bold leading-tighter tracking-tighter mb-4 font-heading">
-					Everything you need is
+					{t('hero.title')}
 					<span class="bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500">Triskel</span> +
 					<span
 						class="bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500 sm:whitespace-nowrap"

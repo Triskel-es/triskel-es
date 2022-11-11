@@ -4,6 +4,8 @@ import Logo from '~/components/atoms/Logo.astro';
 import ToggleTheme from '~/components/core/ToggleTheme.astro';
 import ToggleMenu from '~/components/core/ToggleMenu.astro';
 
+import { LanguageSelector } from 'astro-i18next/components';
+
 import { getPermalink, getBlogPermalink, getHomePermalink } from '~/utils/permalinks';
 ---
 
@@ -110,7 +112,22 @@ import { getPermalink, getBlogPermalink, getHomePermalink } from '~/utils/permal
 						<Icon name="tabler:brand-github" class="w-5 h-5" />
 					</a>
 				</div>
+
+				<LanguageSelector showFlag={false} class="languages" />
 			</div>
 		</nav>
 	</div>
 </header>
+<style>
+	.languages {
+		border: 2px solid var(--color-border);
+		appearance: none;
+		background-color: gray;
+		border-radius: 0.25rem;
+		padding: 0.4em 0.6em;
+		/* padding-right: -3em; */
+	}
+	.languages:is(:hover, :focus-within) {
+		border-color: #4f39fa;
+	}
+</style>
