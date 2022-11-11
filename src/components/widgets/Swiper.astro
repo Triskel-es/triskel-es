@@ -63,4 +63,11 @@ import Picture from '~/components/core/Picture.astro';
 			prevEl: '.swiper-button-prev',
 		},
 	});
+	swiper.$el.on('mouseover', () => {
+		swiper.autoplay.stop();
+	});
+
+	swiper.$el.on('mouseleave', () => {
+		swiper.autoplay.start();
+	});
 </script>
