@@ -2,7 +2,7 @@ export const SITE = {
 	name: 'Triskel',
 
 	origin: 'https://triskel-es.github.io',
-	basePathname: '/astrowind',
+	basePathname: '/',
 	trailingSlash: false,
 
 	title: 'Triskel',
