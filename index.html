@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en" class="motion-safe:scroll-smooth 2xl:text-[20px]">
+	<head>
+		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Triskel</title>
+<meta name="robots" content="index,follow" />
+<meta name="description" content="balance" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:title" content="Triskel" />
+<meta property="og:description" content="balance" />
+<meta property="og:url" content="https://triskel-es.github.io/astrowind/" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://triskel-es.github.io/astrowind/assets/default.c6e14b88_Z13BX1D.png" />
+<meta property="og:image:alt" content="Triskel" />
+<link rel="canonical" href="https://triskel-es.github.io/astrowind/" />
+
+
+<!-- Or Google Fonts -->
+
+<!-- Google Site Verification -->
+<meta name="google-site-verification" content="orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M">
+
+<!-- Google Analytics -->
+
+
+
+
+<link rel="shortcut icon" href="/astrowindfavicon.ico">
+<link rel="icon" type="image/svg+xml" href="/astrowindfavicon.svg">
+<link rel="mask-icon" href="/astrowindfavicon.svg" color="#8D46E7">
+
+
+		<link rel="alternate" hreflang="en" href="https://triskel-es.github.io/astrowind/en/"><link rel="alternate" hreflang="es" href="https://triskel-es.github.io/astrowind/es/"><link rel="alternate" hreflang="gl" href="https://triskel-es.github.io/astrowind/gl/">
+
+	<link rel="stylesheet" href="/astrowind/assets/_...page_.6b99cae2.css" />
+<link rel="stylesheet" href="/astrowind/assets/_...page_.253e816f.css" /><script type="module">var e=new Swiper(".mySwiper",{loop:!0,spaceBetween:30,centeredSlides:!0,autoplay:{delay:2500,disableOnInteraction:!1},pagination:{el:".swiper-pagination",clickable:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});e.$el.on("mouseover",()=>{e.autoplay.stop()});e.$el.on("mouseleave",()=>{e.autoplay.start()});
+</script>
+<script>!(function(w,p,f,c){c=w[p]=Object.assign(w[p]||{},{"lib":"/astrowind/~partytown/","debug":false});c[f]=(c[f]||[]).concat(["dataLayer.push"])})(window,'partytown','forward');/* Partytown 0.7.1 - MIT builder.io */
+!function(t,e,n,i,r,o,a,d,s,c,p,l){function u(){l||(l=1,"/"==(a=(o.lib||"/~partytown/")+(o.debug?"debug/":""))[0]&&(s=e.querySelectorAll('script[type="text/partytown"]'),i!=t?i.dispatchEvent(new CustomEvent("pt1",{detail:t})):(d=setTimeout(w,1e4),e.addEventListener("pt0",f),r?h(1):n.serviceWorker?n.serviceWorker.register(a+(o.swPath||"partytown-sw.js"),{scope:a}).then((function(t){t.active?h():t.installing&&t.installing.addEventListener("statechange",(function(t){"activated"==t.target.state&&h()}))}),console.error):w())))}function h(t){c=e.createElement(t?"script":"iframe"),t||(c.setAttribute("style","display:block;width:0;height:0;border:0;visibility:hidden"),c.setAttribute("aria-hidden",!0)),c.src=a+"partytown-"+(t?"atomics.js?v=0.7.1":"sandbox-sw.html?"+Date.now()),e.body.appendChild(c)}function w(t,n){for(f(),t=0;t<s.length;t++)(n=e.createElement("script")).innerHTML=s[t].innerHTML,e.head.appendChild(n);c&&c.parentNode.removeChild(c)}function f(){clearTimeout(d)}o=t.partytown||{},i==t&&(o.forward||[]).map((function(e){p=t,e.split(".").map((function(e,n,i){p=p[i[n]]=n+1<i.length?"push"==i[n+1]?[]:p[i[n]]||{}:function(){(t._ptf=t._ptf||[]).push(i,arguments)}}))})),"complete"==e.readyState?u():(t.addEventListener("DOMContentLoaded",u),t.addEventListener("load",u))}(window,document,navigator,top,window.crossOriginIsolated);</script></head>
+
+	<body class="antialiased text-gray-900 dark:text-slate-300 tracking-tight bg-white dark:bg-slate-900">
+		<header class="sticky top-0 z-40 flex-none mx-auto w-full bg-white md:bg-white/90 dark:bg-slate-900 dark:md:bg-slate-900/90 md:backdrop-blur-sm border-b dark:border-b-0 astro-6VDSN3IV" id="header">
+	<div class="py-3 px-3 mx-auto w-full md:flex md:justify-between max-w-6xl md:px-4 astro-6VDSN3IV">
+		<div class="flex justify-between astro-6VDSN3IV">
+			<a class="flex items-center astro-6VDSN3IV" href="/astrowind/">
+				<img class="w-20" src="/logo.webp" alt="3k">
+<span class="self-center ml-2 text-2xl font-extrabold text-gray-900 whitespace-nowrap dark:text-white">TRISKEL</span>
+			</a>
+			<div class="flex items-center md:hidden astro-6VDSN3IV">
+				<button type="button" class="astro-6VDSN3IV" aria-label="Toggle between Dark and Light mode" data-aw-toggle-color-scheme>
+	<svg viewBox="0 0 24 24" class="w-6 h-6" astro-icon="tabler:sun"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon-tabler"><circle cx="12" cy="12" r="4"/><path d="M3 12h1m8-9v1m8 8h1m-9 8v1M5.6 5.6l.7.7m12.1-.7-.7.7m0 11.4.7.7m-12.1-.7-.7.7"/></g></svg>
+</button>
+				<button type="button" class="astro-6VDSN3IV" aria-label="Toggle Menu" data-aw-toggle-menu>
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" class="w-6 h-6" astro-icon="tabler:menu"><g class="icon-tabler" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h16"/><path d="M4 16h16"/></g></svg>
+</button>
+			</div>
+		</div>
+		<nav class="items-center w-full md:w-auto hidden md:flex text-gray-600 dark:text-slate-200 h-screen md:h-auto astro-6VDSN3IV" aria-label="Main navigation">
+			<ul class="flex flex-col pt-8 md:pt-0 md:flex-row md:self-center w-full md:w-auto text-xl md:text-base astro-6VDSN3IV">
+				<li class="astro-6VDSN3IV">
+					<a class="font-black hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out astro-6VDSN3IV" href="/astrowind/#top">
+						<svg viewBox="0 0 24 24" class="w-5 h-5 astro-6VDSN3IV" astro-icon="tabler:armchair"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon-tabler"><path d="M5 11a2 2 0 0 1 2 2v2h10v-2a2 2 0 1 1 4 0v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2z"/><path d="M5 11V6a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v5M6 19v2M18 19v2"/></g></svg>O
+					</a>
+				</li>
+				<li class="astro-6VDSN3IV">
+					<a class="font-black hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out astro-6VDSN3IV" href="/astrowind/blog">
+						<svg viewBox="0 0 24 24" class="w-5 h-5 astro-6VDSN3IV" astro-icon="tabler:device-laptop"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon-tabler"><path d="M3 19h18"/><rect width="14" height="10" x="5" y="6" rx="1"/></g></svg>W
+					</a>
+				</li>
+				<li class="astro-6VDSN3IV">
+					<a class="font-black hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out astro-6VDSN3IV" href="/astrowind/#roots">
+						<svg viewBox="0 0 24 24" class="w-5 h-5 astro-6VDSN3IV" astro-icon="tabler:plant"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon-tabler"><path d="M7 15h10v4a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2v-4zM12 9a6 6 0 0 0-6-6H3v2a6 6 0 0 0 6 6h3M12 11a6 6 0 0 1 6-6h3v1a6 6 0 0 1-6 6h-3M12 15V9"/></g></svg>R
+					</a>
+				</li>
+				<li class="astro-6VDSN3IV">
+					<a class="font-black hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out astro-6VDSN3IV" href="/astrowind/#elements">
+						<svg viewBox="0 0 24 24" class="w-5 h-5 astro-6VDSN3IV" astro-icon="tabler:stack-2"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon-tabler"><path d="M12 4 4 8l8 4 8-4-8-4M4 12l8 4 8-4M4 16l8 4 8-4"/></g></svg>E
+					</a>
+				</li>
+				<li class="astro-6VDSN3IV">
+					<a class="font-black hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out astro-6VDSN3IV" href="/astrowind/#space">
+						<svg viewBox="0 0 24 24" class="w-5 h-5 astro-6VDSN3IV" astro-icon="tabler:rocket"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon-tabler"><path d="M4 13a8 8 0 0 1 7 7 6 6 0 0 0 3-5 9 9 0 0 0 6-8 3 3 0 0 0-3-3 9 9 0 0 0-8 6 6 6 0 0 0-5 3"/><path d="M7 14a6 6 0 0 0-3 6 6 6 0 0 0 6-3"/><circle cx="15" cy="9" r="1"/></g></svg>S
+					</a>
+				</li>
+				<li class="astro-6VDSN3IV">
+					<a class="font-black hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out astro-6VDSN3IV" href="/astrowind/#coordinates">
+						<svg viewBox="0 0 24 24" class="w-5 h-5 astro-6VDSN3IV" astro-icon="tabler:current-location"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon-tabler"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8"/><path d="M12 2v2M12 20v2M20 12h2M2 12h2"/></g></svg>C
+					</a>
+				</li>
+				<!-- <li>
+					<a
+						class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
+						href="#">Pages</a
+					>
+				</li> -->
+				<!-- <li>
+					<a
+						class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
+						href={getPermalink('useful-resources-to-create-websites', 'post')}>R</a
+					>
+				</li>
+				<li>
+					<a
+						class="font-medium hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out"
+						href={getBlogPermalink()}>B</a
+					>
+				</li> -->
+				<li class="md:hidden astro-6VDSN3IV">
+					<a class="font-bold hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition duration-150 ease-in-out astro-6VDSN3IV" href="https://github.com/Triskel-es">
+						<svg viewBox="0 0 24 24" class="w-5 h-5 astro-6VDSN3IV" astro-icon="tabler:brand-github"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+					</a>
+				</li>
+			</ul>
+			<div class="md:self-center flex items-center mb-4 md:mb-0 ml-2 astro-6VDSN3IV">
+				<div class="hidden items-center md:flex astro-6VDSN3IV">
+					<button type="button" class="astro-6VDSN3IV" aria-label="Toggle between Dark and Light mode" data-aw-toggle-color-scheme>
+	<svg viewBox="0 0 24 24" class="w-5 h-5" astro-icon="tabler:sun"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon-tabler"><circle cx="12" cy="12" r="4"/><path d="M3 12h1m8-9v1m8 8h1m-9 8v1M5.6 5.6l.7.7m12.1-.7-.7.7m0 11.4.7.7m-12.1-.7-.7.7"/></g></svg>
+</button>
+					<!-- <a
+						class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+						aria-label="RSS Feed"
+						href="/rss.xml"
+					>
+						<Icon name="tabler:rss" class="w-5 h-5" />
+					</a> -->
+					<a href="https://github.com/Triskel-es" class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 astro-6VDSN3IV" aria-label="Astrowind Github">
+						<svg viewBox="0 0 24 24" class="w-5 h-5 astro-6VDSN3IV" astro-icon="tabler:brand-github"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+					</a>
+				</div>
+
+				<select onchange="location = this.value;" class="languages astro-6VDSN3IV">
+  <option value="/astrowind/" selected="true">
+          English
+        </option><option value="/astrowind/es/">
+          Español
+        </option><option value="/astrowind/gl/">
+          galego
+        </option>
+</select>
+			</div>
+		</nav>
+	</div>
+</header>
+<main>
+		<p id="top"></p><hr><hr><hr><hr><div class="relative mt-8 mb-8 m-auto max-w-6xl">
+	<div class="swiper mySwiper">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<picture>
+			<source type="image/avif" srcset="/astrowind/assets/druid.6b174e0c_ZkXQ0M.avif 400w,/astrowind/assets/druid.6b174e0c_Z2dTmWS.avif 768w" sizes="(max-width: 767px) 400px, 768px"><source type="image/webp" srcset="/astrowind/assets/druid.6b174e0c_nlWVY.webp 400w,/astrowind/assets/druid.6b174e0c_Z1uyy07.webp 768w" sizes="(max-width: 767px) 400px, 768px"><source type="image/jpeg" srcset="/astrowind/assets/druid.6b174e0c_Z5sMj.jpg 400w,/astrowind/assets/druid.6b174e0c_Z2lS6fF.jpg 768w" sizes="(max-width: 767px) 400px, 768px">
+			<img width="768" height="432" src="/astrowind/assets/druid.6b174e0c_1SRzE0.jpg" loading="eager" decoding="async" alt="Hero Image" class="mx-auto rounded-md shadow-lg bg-gray-400 dark:bg-slate-700 w-full">
+		</picture>
+			</div>
+			<div class="swiper-slide">
+				<picture>
+			<source type="image/avif" srcset="/astrowind/assets/stonesss.b8a23d5d_2tCWkd.avif 400w,/astrowind/assets/stonesss.b8a23d5d_AHqn7.avif 768w" sizes="(max-width: 767px) 400px, 768px"><source type="image/webp" srcset="/astrowind/assets/stonesss.b8a23d5d_Z1RdmvW.webp 400w,/astrowind/assets/stonesss.b8a23d5d_1k3fkS.webp 768w" sizes="(max-width: 767px) 400px, 768px"><source type="image/jpeg" srcset="/astrowind/assets/stonesss.b8a23d5d_ZewzD3.jpg 400w,/astrowind/assets/stonesss.b8a23d5d_2tQUHw.jpg 768w" sizes="(max-width: 767px) 400px, 768px">
+			<img width="768" height="432" src="/astrowind/assets/stonesss.b8a23d5d_1Pqk1H.jpg" loading="eager" decoding="async" alt="Hero Image" class="mx-auto rounded-md shadow-lg bg-gray-400 dark:bg-slate-700 w-full">
+		</picture>
+			</div>
+			<div class="swiper-slide">
+				<picture>
+			<source type="image/avif" srcset="/astrowind/assets/jewel.61343e83_Z2g7pID.avif 400w,/astrowind/assets/jewel.61343e83_V9c8c.avif 768w" sizes="(max-width: 767px) 400px, 768px"><source type="image/webp" srcset="/astrowind/assets/jewel.61343e83_Z1wLAKR.webp 400w,/astrowind/assets/jewel.61343e83_1Eu15X.webp 768w" sizes="(max-width: 767px) 400px, 768px"><source type="image/jpeg" srcset="/astrowind/assets/jewel.61343e83_15aKQ4.jpg 400w,/astrowind/assets/jewel.61343e83_Z1gBQBi.jpg 768w" sizes="(max-width: 767px) 400px, 768px">
+			<img width="768" height="432" src="/astrowind/assets/jewel.61343e83_Z1buYNs.jpg" loading="eager" decoding="async" alt="Hero Image" class="mx-auto rounded-md shadow-lg bg-gray-400 dark:bg-slate-700 w-full">
+		</picture>
+			</div>
+		</div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-pagination"></div>
+	</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<section>
+	<div class="max-w-6xl mx-auto px-4 sm:px-6">
+		<div class="py-12 md:py-20">
+			<!-- <div>
+				<div class="relative mb-8 m-auto max-w-3xl">
+					<Picture
+						src={import('~/assets/images/hero.jpg')}
+						class="mx-auto rounded-md shadow-lg bg-gray-400 dark:bg-slate-700 w-full"
+						widths={[400, 768]}
+						sizes="(max-width: 767px) 400px, 768px"
+						alt="Hero Image"
+						aspectRatio="16:9"
+						loading="eager"
+					/>
+				</div>
+			</div> -->
+			<div class="text-center pb-10 md:pb-16 max-w-5xl mx-auto">
+				<h1 class="text-5xl md:text-[3.50rem] font-bold leading-tighter tracking-tighter mb-4 font-heading">
+					Everything you need is 
+					<span class="bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500">Triskel</span> +
+					<span class="bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500 sm:whitespace-nowrap">a good idea</span>
+				</h1>
+				<div class="max-w-3xl mx-auto">
+					<p class="text-xl text-gray-600 mb-8 dark:text-slate-400">
+						the place where you can transform everything you imagine into a movie <span class="inline sm:hidden">...</span><span class="hidden sm:inline">once you come, you will never want to leave</span>
+					</p>
+					<div class="max-w-none px-6 flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4">
+						<div class="flex w-full sm:w-auto">
+							<a class="btn text-white border border-primary-600 bg-primary-600 hover:bg-primary-800 hover:border-primary-800 sm:mb-0 w-full" href="https://github.com/triskel-es" target="_blank" rel="noopener">Join us</a>
+						</div>
+						<div class="flex w-full sm:w-auto">
+							<a class="btn text-white bg-gray-900 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-800 w-full" href="#features">Learn more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><p>Works</p><hr><hr><hr><hr><section class="px-4 py-16 mx-auto max-w-6xl lg:py-20">
+	<div class="flex flex-col mb-6 lg:justify-between lg:flex-row md:mb-8">
+		<!-- <h2 class="max-w-lg mb-2 text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none lg:mb-5 group font-heading">
+			<span class="inline-block mb-1 sm:mb-4">Discover our works</span>
+		</h2>
+
+		<p class="text-gray-700 dark:text-slate-400 lg:text-sm lg:max-w-md">
+			The blog will be used to show the work done. Every new job you can find here...
+		</p> -->
+	</div>
+
+	<div class="grid gap-6 row-gap-5 md:grid-cols-2 lg:grid-cols-4 -mb-6">
+	<article class="mb-6 transition">
+	<div class="relative h-0 pb-[56.25%] lg:h-64 overflow-hidden bg-gray-400 dark:bg-slate-700 rounded shadow-lg mb-6">
+		<picture>
+			<source type="image/avif" srcset="/astrowind/assets/steps.21b3bbe9_1B3plB.avif 400w,/astrowind/assets/steps.21b3bbe9_Z1LIcg5.avif 900w" sizes="(max-width: 900px) 400px, 900px"><source type="image/webp" srcset="/astrowind/assets/steps.21b3bbe9_2koejn.webp 400w,/astrowind/assets/steps.21b3bbe9_Z13nnij.webp 900w" sizes="(max-width: 900px) 400px, 900px"><source type="image/jpeg" srcset="/astrowind/assets/steps.21b3bbe9_RLHYO.jpg 400w,/astrowind/assets/steps.21b3bbe9_75g3X.jpg 900w" sizes="(max-width: 900px) 400px, 900px">
+			<img width="900" height="506" src="/astrowind/assets/steps.21b3bbe9_2i5ibU.jpg" loading="lazy" decoding="async" alt="Get started with Triskel to create post..." class="object-cover w-full lg:h-64 rounded shadow-lg bg-gray-400 dark:bg-slate-700">
+		</picture>
+	</div>
+	<h3 class="mb-2 text-xl font-bold leading-snug sm:text-2xl font-heading">
+		<a href="/astrowind/get-started-website-with-astro-tailwind-css" class="hover:text-primary-600 underline underline-offset-4 decoration-1 decoration-dotted transition ease-in duration-200">
+			Get started with Triskel to create post...
+		</a>
+	</h3>
+	<p class="text-gray-700 dark:text-gray-400">Ornare cum cursus laoreet sagittis nunc fusce posuere per euismod dis vehicula a, semper fames lacus maecenas dictumst pulvinar neque enim non potenti. Torquent hac sociosqu eleifend potenti.</p>
+</article><article class="mb-6 transition">
+	<div class="relative h-0 pb-[56.25%] lg:h-64 overflow-hidden bg-gray-400 dark:bg-slate-700 rounded shadow-lg mb-6">
+		<picture>
+			<source type="image/avif" srcset="/astrowind/assets/colors.98fbb1a4_Z1jyWN3.avif 400w,/astrowind/assets/colors.98fbb1a4_mPyoc.avif 900w" sizes="(max-width: 900px) 400px, 900px"><source type="image/webp" srcset="/astrowind/assets/colors.98fbb1a4_ZAe8Ph.webp 400w,/astrowind/assets/colors.98fbb1a4_16bnlX.webp 900w" sizes="(max-width: 900px) 400px, 900px"><source type="image/jpeg" srcset="/astrowind/assets/colors.98fbb1a4_1720wf.jpg 400w,/astrowind/assets/colors.98fbb1a4_lkxAo.jpg 900w" sizes="(max-width: 900px) 400px, 900px">
+			<img width="900" height="506" src="/astrowind/assets/colors.98fbb1a4_pVKqs.jpg" loading="lazy" decoding="async" alt="How to customize studio Triskel to suit your desires..." class="object-cover w-full lg:h-64 rounded shadow-lg bg-gray-400 dark:bg-slate-700">
+		</picture>
+	</div>
+	<h3 class="mb-2 text-xl font-bold leading-snug sm:text-2xl font-heading">
+		<a href="/astrowind/how-to-customize-astrowind-to-your-brand" class="hover:text-primary-600 underline underline-offset-4 decoration-1 decoration-dotted transition ease-in duration-200">
+			How to customize studio Triskel to suit your desires...
+		</a>
+	</h3>
+	<p class="text-gray-700 dark:text-gray-400">Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat</p>
+</article><article class="mb-6 transition">
+	<div class="relative h-0 pb-[56.25%] lg:h-64 overflow-hidden bg-gray-400 dark:bg-slate-700 rounded shadow-lg mb-6">
+		<picture>
+			<source type="image/avif" srcset="/astrowind/assets/tools.8d72c4d8_1koYzo.avif 400w,/astrowind/assets/tools.8d72c4d8_Z23mC2i.avif 900w" sizes="(max-width: 900px) 400px, 900px"><source type="image/webp" srcset="/astrowind/assets/tools.8d72c4d8_23JNxa.webp 400w,/astrowind/assets/tools.8d72c4d8_Z1k1N4w.webp 900w" sizes="(max-width: 900px) 400px, 900px"><source type="image/jpeg" srcset="/astrowind/assets/tools.8d72c4d8_ZqNagy.jpg 400w,/astrowind/assets/tools.8d72c4d8_Z1cuCcp.jpg 900w" sizes="(max-width: 900px) 400px, 900px">
+			<img width="900" height="506" src="/astrowind/assets/tools.8d72c4d8_ckU28.jpg" loading="lazy" decoding="async" alt="Useful tools and resources to create a professional work" class="object-cover w-full lg:h-64 rounded shadow-lg bg-gray-400 dark:bg-slate-700">
+		</picture>
+	</div>
+	<h3 class="mb-2 text-xl font-bold leading-snug sm:text-2xl font-heading">
+		<a href="/astrowind/useful-resources-to-create-websites" class="hover:text-primary-600 underline underline-offset-4 decoration-1 decoration-dotted transition ease-in duration-200">
+			Useful tools and resources to create a professional work
+		</a>
+	</h3>
+	<p class="text-gray-700 dark:text-gray-400">Nibh senectus lacinia volutpat nostra taciti ac posuere, dictum ultricies dictumst luctus in vehicula, mus molestie venenatis penatibus ridiculus elementum. Phasellus sollicitudin dignissim parturient.</p>
+</article><article class="mb-6 transition">
+	<div class="relative h-0 pb-[56.25%] lg:h-64 overflow-hidden bg-gray-400 dark:bg-slate-700 rounded shadow-lg mb-6">
+		<picture>
+			<source type="image/avif" srcset="/astrowind/assets/hero.b23885d2_1tJIaG.avif 400w,/astrowind/assets/hero.b23885d2_Z1T1Sr0.avif 900w" sizes="(max-width: 900px) 400px, 900px"><source type="image/webp" srcset="/astrowind/assets/hero.b23885d2_2d5x8s.webp 400w,/astrowind/assets/hero.b23885d2_Z1aG4te.webp 900w" sizes="(max-width: 900px) 400px, 900px"><source type="image/jpeg" srcset="/astrowind/assets/hero.b23885d2_dvLov.jpg 400w,/astrowind/assets/hero.b23885d2_ZxaFwl.jpg 900w" sizes="(max-width: 900px) 400px, 900px">
+			<img width="900" height="506" src="/astrowind/assets/hero.b23885d2_cy7R3.jpg" loading="lazy" decoding="async" alt="Triskel seen from space" class="object-cover w-full lg:h-64 rounded shadow-lg bg-gray-400 dark:bg-slate-700">
+		</picture>
+	</div>
+	<h3 class="mb-2 text-xl font-bold leading-snug sm:text-2xl font-heading">
+		<a href="/astrowind/astrowind-template-in-depth" class="hover:text-primary-600 underline underline-offset-4 decoration-1 decoration-dotted transition ease-in duration-200">
+			Triskel seen from space
+		</a>
+	</h3>
+	<p class="text-gray-700 dark:text-gray-400">Ornare cum cursus laoreet sagittis nunc fusce posuere per euismod dis vehicula a, semper fames lacus maecenas dictumst pulvinar neque enim non potenti. Torquent hac sociosqu eleifend potenti.</p>
+</article>
+</div>
+</section><hr><hr><hr><hr><a id="roots" class="font-black hover:text-gray-900 dark:hover:text-white text-right transition duration-150 ease-in-out" href="/astrowind/#top">
+		Roots
+	</a><section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-6xl">
+	<div class="grid gap-6 row-gap-10 md:grid-cols-2">
+		<div class="md:pb-6 md:pr-16">
+			<h2 class="mb-8 text-3xl lg:text-4xl font-bold font-heading">The roots that define us</h2>
+			<div class="flex">
+				<div class="flex flex-col items-center mr-4">
+					<div>
+						<div class="flex items-center justify-center w-10 h-10 rounded-full border-secondary-500 border-2">
+							<svg viewBox="0 0 24 24" class="w-6 h-6 text-gray-600 dark:text-slate-200 icon-bold" astro-icon="tabler:arrow-down"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon-tabler"><path d="M12 5v14M18 13l-6 6M6 13l6 6"/></g></svg>
+						</div>
+					</div>
+					<div class="w-px h-full bg-gray-300 dark:bg-slate-500"></div>
+				</div>
+				<div class="pt-1 pb-8">
+					<p class="mb-2 text-xl font-bold text-gray-900 dark:text-slate-300">Step 1 - Understand</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi
+						risus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce
+						sit amet dui tellus.
+					</p>
+				</div>
+			</div>
+			<div class="flex">
+				<div class="flex flex-col items-center mr-4">
+					<div>
+						<div class="flex items-center justify-center w-10 h-10 rounded-full border-secondary-500 border-2">
+							<svg viewBox="0 0 24 24" class="w-6 h-6 text-gray-600 dark:text-slate-200 icon-bold" astro-icon="tabler:arrow-down"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon-tabler"><path d="M12 5v14M18 13l-6 6M6 13l6 6"/></g></svg>
+						</div>
+					</div>
+					<div class="w-px h-full bg-gray-300 dark:bg-slate-500"></div>
+				</div>
+				<div class="pt-1 pb-8">
+					<p class="mb-2 text-xl font-bold text-gray-900 dark:text-slate-300">Step 2 - Trust</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi
+						risus tempus nulla, sed porttitor est nibh at nulla.
+					</p>
+				</div>
+			</div>
+			<div class="flex">
+				<div class="flex flex-col items-center mr-4">
+					<div>
+						<div class="flex items-center justify-center w-10 h-10 rounded-full border-secondary-500 border-2">
+							<svg viewBox="0 0 24 24" class="w-6 h-6 text-gray-600 dark:text-slate-200 icon-bold" astro-icon="tabler:arrow-down"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon-tabler"><path d="M12 5v14M18 13l-6 6M6 13l6 6"/></g></svg>
+						</div>
+					</div>
+					<div class="w-px h-full bg-gray-300 dark:bg-slate-500"></div>
+				</div>
+				<div class="pt-1 pb-8">
+					<p class="mb-2 text-xl font-bold text-gray-900 dark:text-slate-300">Step 3 - Believe</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi
+						risus tempus nulla, sed porttitor est nibh at nulla.
+					</p>
+				</div>
+			</div>
+			<div class="flex">
+				<div class="flex flex-col items-center mr-4">
+					<div>
+						<div class="flex items-center justify-center w-10 h-10 rounded-full border-primary-600 border-2">
+							<svg viewBox="0 0 24 24" class="w-6 h-6 text-gray-600 dark:text-slate-200 icon-bold" astro-icon="tabler:check"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 12 5 5L20 7"/></svg>
+						</div>
+					</div>
+				</div>
+				<div class="pt-1">
+					<p class="mb-2 text-xl font-bold text-gray-900 dark:text-slate-300">Ready!</p>
+					<p class="text-gray-700"></p>
+				</div>
+			</div>
+		</div>
+		<div class="relative">
+			<picture>
+			<source type="image/avif" srcset="/astrowind/assets/tree.239a99de_1WJYn.avif 400w,/astrowind/assets/tree.239a99de_ZyQ2lr.avif 768w" sizes="(max-width: 768px) 100vw, 432px"><source type="image/webp" srcset="/astrowind/assets/tree.239a99de_KiyW9.webp 400w,/astrowind/assets/tree.239a99de_9tLBk.webp 768w" sizes="(max-width: 768px) 100vw, 432px"><source type="image/jpeg" srcset="/astrowind/assets/tree.239a99de_ZtmupA.jpg 400w,/astrowind/assets/tree.239a99de_Z1DAFPj.jpg 768w" sizes="(max-width: 768px) 100vw, 432px">
+			<img width="768" height="1365" src="/astrowind/assets/tree.239a99de_1GjBfy.jpg" loading="lazy" decoding="async" alt="Tree" class="inset-0 object-cover object-top w-full rounded-md shadow-lg md:absolute md:h-full bg-gray-400 dark:bg-slate-700">
+		</picture>
+		</div>
+	</div>
+</section>
+
+<!-- aspectRatio="432:768" --><span></span><hr><hr><hr><hr><hr><hr><hr><hr><a id="elements" class="font-black hover:text-gray-900 dark:hover:text-white text-right transition duration-150 ease-in-out" href="/astrowind/#top">
+		Elements
+	</a><section class="relative">
+	<div class="absolute inset-0 bg-primary-50 dark:bg-slate-800 pointer-events-none mb-32" aria-hidden="true"></div>
+	<div class="relative max-w-6xl mx-auto px-4 sm:px-6">
+		<div class="py-4 pt-8 sm:py-6 lg:py-8 lg:pt-12">
+			<div class="mb-8 text-center">
+				<!-- <p class="text-base text-primary-600 dark:text-primary-200 font-semibold tracking-wide uppercase">Elements</p> -->
+				<h2 class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading">
+					What are we made of?
+				</h2>
+				<p class="max-w-3xl mx-auto text-center text-xl text-gray-600 dark:text-slate-400">
+					What differentiates us is what makes us unique
+				</p>
+			</div>
+			<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start my-12 dark:text-white">
+				<div class="relative flex flex-col p-6 bg-white dark:bg-slate-900 rounded shadow-xl hover:shadow-lg transition dark:border dark:border-slate-800">
+							<div class="flex items-center mb-4">
+								<svg viewBox="0 0 24 24" class="w-12 h-12" astro-icon="akar-icons:fire"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22c-4.97 0-9-2.582-9-7v-.088C3 12.794 4.338 11.1 6.375 10c1.949-1.052 3.101-2.99 2.813-5l-.563-3 2.086.795c3.757 1.43 6.886 3.912 8.914 7.066A8.495 8.495 0 0 1 21 14.464V15c0 1.562-.504 2.895-1.375 3.965"/><path d="M12 22c-1.657 0-3-1.433-3-3.2 0-1.4 1.016-2.521 1.91-3.548L12 14l1.09 1.252C13.984 16.28 15 17.4 15 18.8c0 1.767-1.343 3.2-3 3.2z"/></g></svg>
+
+								<div class="ml-4 text-xl font-bold">Stone</div>
+							</div>
+							<p class="text-gray-500 dark:text-gray-400 text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+						</div><div class="relative flex flex-col p-6 bg-white dark:bg-slate-900 rounded shadow-xl hover:shadow-lg transition dark:border dark:border-slate-800">
+							<div class="flex items-center mb-4">
+								<svg viewBox="0 0 24 24" class="w-12 h-12" astro-icon="akar-icons:fire"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22c-4.97 0-9-2.582-9-7v-.088C3 12.794 4.338 11.1 6.375 10c1.949-1.052 3.101-2.99 2.813-5l-.563-3 2.086.795c3.757 1.43 6.886 3.912 8.914 7.066A8.495 8.495 0 0 1 21 14.464V15c0 1.562-.504 2.895-1.375 3.965"/><path d="M12 22c-1.657 0-3-1.433-3-3.2 0-1.4 1.016-2.521 1.91-3.548L12 14l1.09 1.252C13.984 16.28 15 17.4 15 18.8c0 1.767-1.343 3.2-3 3.2z"/></g></svg>
+
+								<div class="ml-4 text-xl font-bold">Earth</div>
+							</div>
+							<p class="text-gray-500 dark:text-gray-400 text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+						</div><div class="relative flex flex-col p-6 bg-white dark:bg-slate-900 rounded shadow-xl hover:shadow-lg transition dark:border dark:border-slate-800">
+							<div class="flex items-center mb-4">
+								<svg viewBox="0 0 24 24" class="w-12 h-12" astro-icon="akar-icons:fire"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22c-4.97 0-9-2.582-9-7v-.088C3 12.794 4.338 11.1 6.375 10c1.949-1.052 3.101-2.99 2.813-5l-.563-3 2.086.795c3.757 1.43 6.886 3.912 8.914 7.066A8.495 8.495 0 0 1 21 14.464V15c0 1.562-.504 2.895-1.375 3.965"/><path d="M12 22c-1.657 0-3-1.433-3-3.2 0-1.4 1.016-2.521 1.91-3.548L12 14l1.09 1.252C13.984 16.28 15 17.4 15 18.8c0 1.767-1.343 3.2-3 3.2z"/></g></svg>
+
+								<div class="ml-4 text-xl font-bold">Water</div>
+							</div>
+							<p class="text-gray-500 dark:text-gray-400 text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+						</div><div class="relative flex flex-col p-6 bg-white dark:bg-slate-900 rounded shadow-xl hover:shadow-lg transition dark:border dark:border-slate-800">
+							<div class="flex items-center mb-4">
+								<svg viewBox="0 0 24 24" class="w-12 h-12" astro-icon="akar-icons:fire"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22c-4.97 0-9-2.582-9-7v-.088C3 12.794 4.338 11.1 6.375 10c1.949-1.052 3.101-2.99 2.813-5l-.563-3 2.086.795c3.757 1.43 6.886 3.912 8.914 7.066A8.495 8.495 0 0 1 21 14.464V15c0 1.562-.504 2.895-1.375 3.965"/><path d="M12 22c-1.657 0-3-1.433-3-3.2 0-1.4 1.016-2.521 1.91-3.548L12 14l1.09 1.252C13.984 16.28 15 17.4 15 18.8c0 1.767-1.343 3.2-3 3.2z"/></g></svg>
+
+								<div class="ml-4 text-xl font-bold">Energy</div>
+							</div>
+							<p class="text-gray-500 dark:text-gray-400 text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+						</div><div class="relative flex flex-col p-6 bg-white dark:bg-slate-900 rounded shadow-xl hover:shadow-lg transition dark:border dark:border-slate-800">
+							<div class="flex items-center mb-4">
+								<svg viewBox="0 0 24 24" class="w-12 h-12" astro-icon="akar-icons:fire"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22c-4.97 0-9-2.582-9-7v-.088C3 12.794 4.338 11.1 6.375 10c1.949-1.052 3.101-2.99 2.813-5l-.563-3 2.086.795c3.757 1.43 6.886 3.912 8.914 7.066A8.495 8.495 0 0 1 21 14.464V15c0 1.562-.504 2.895-1.375 3.965"/><path d="M12 22c-1.657 0-3-1.433-3-3.2 0-1.4 1.016-2.521 1.91-3.548L12 14l1.09 1.252C13.984 16.28 15 17.4 15 18.8c0 1.767-1.343 3.2-3 3.2z"/></g></svg>
+
+								<div class="ml-4 text-xl font-bold">Fire</div>
+							</div>
+							<p class="text-gray-500 dark:text-gray-400 text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+						</div><div class="relative flex flex-col p-6 bg-white dark:bg-slate-900 rounded shadow-xl hover:shadow-lg transition dark:border dark:border-slate-800">
+							<div class="flex items-center mb-4">
+								<svg viewBox="0 0 24 24" class="w-12 h-12" astro-icon="akar-icons:fire"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22c-4.97 0-9-2.582-9-7v-.088C3 12.794 4.338 11.1 6.375 10c1.949-1.052 3.101-2.99 2.813-5l-.563-3 2.086.795c3.757 1.43 6.886 3.912 8.914 7.066A8.495 8.495 0 0 1 21 14.464V15c0 1.562-.504 2.895-1.375 3.965"/><path d="M12 22c-1.657 0-3-1.433-3-3.2 0-1.4 1.016-2.521 1.91-3.548L12 14l1.09 1.252C13.984 16.28 15 17.4 15 18.8c0 1.767-1.343 3.2-3 3.2z"/></g></svg>
+
+								<div class="ml-4 text-xl font-bold">Wind</div>
+							</div>
+							<p class="text-gray-500 dark:text-gray-400 text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+						</div>
+			</div>
+		</div>
+	</div>
+</section><span></span><hr><hr><hr><hr><hr><hr><hr><hr><a id="space" class="font-black hover:text-gray-900 dark:hover:text-white text-right transition duration-150 ease-in-out" href="/astrowind/#top">
+		Space
+	</a><section class="scroll-mt-16" id="features">
+	<div class="px-4 py-16 mx-auto max-w-6xl lg:px-8 lg:py-20 bg-primary-50 dark:bg-slate-800">
+		<div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+			<!-- <p class="text-base text-primary-600 dark:text-primary-200 font-semibold tracking-wide uppercase">Features</p> -->
+			<h2 class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading">
+				What's interesting about <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500 whitespace-nowrap">Our space</span>
+			</h2>
+			<p class="max-w-3xl mx-auto sm:text-center text-xl text-gray-600 dark:text-slate-400">
+				Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa
+				quae.
+			</p>
+		</div>
+		<div class="grid mx-auto space-y-6 md:grid-cols-2 md:space-y-0">
+			<div class="space-y-8 sm:px-8">
+						<div class="flex flex-row max-w-md">
+								<div class="mb-4 mr-4">
+									<div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary-500">
+										<svg viewBox="0 0 24 24" class="w-5 h-5 text-white" astro-icon="tabler:brand-tailwind"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.667 6C9.177 6 7.623 7.222 7 9.667c.933-1.223 2.023-1.68 3.267-1.375.71.174 1.217.68 1.778 1.24.916.912 2 1.968 4.288 1.968 2.49 0 4.044-1.222 4.667-3.667-.933 1.223-2.023 1.68-3.267 1.375-.71-.174-1.217-.68-1.778-1.24C15.039 7.056 13.98 6 11.667 6zm-4 6.5c-2.49 0-4.044 1.222-4.667 3.667.933-1.223 2.023-1.68 3.267-1.375.71.174 1.217.68 1.778 1.24.916.912 1.975 1.968 4.288 1.968 2.49 0 4.044-1.222 4.667-3.667-.933 1.223-2.023 1.68-3.267 1.375-.71-.174-1.217-.68-1.778-1.24-.916-.912-1.975-1.968-4.288-1.968z"/></svg>
+									</div>
+								</div>
+								<div>
+									<h3 class="mb-3 text-xl font-bold">Integrated with the environment</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.</p>
+								</div>
+							</div><div class="flex flex-row max-w-md">
+								<div class="mb-4 mr-4">
+									<div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary-500">
+										<svg viewBox="0 0 24 24" class="w-5 h-5 text-white" astro-icon="tabler:components"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon-tabler"><path d="m3 12 3 3 3-3-3-3zM15 12l3 3 3-3-3-3zM9 6l3 3 3-3-3-3zM9 18l3 3 3-3-3-3z"/></g></svg>
+									</div>
+								</div>
+								<div>
+									<h3 class="mb-3 text-xl font-bold">Ready-to-use Components</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.</p>
+								</div>
+							</div><div class="flex flex-row max-w-md">
+								<div class="mb-4 mr-4">
+									<div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary-500">
+										<svg viewBox="0 0 24 24" class="w-5 h-5 text-white" astro-icon="tabler:list-check"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon-tabler"><path d="M3.5 5.5 5 7l2.5-2.5M3.5 11.5 5 13l2.5-2.5M3.5 17.5 5 19l2.5-2.5M11 6h9M11 12h9M11 18h9"/></g></svg>
+									</div>
+								</div>
+								<div>
+									<h3 class="mb-3 text-xl font-bold">Best Practices</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.</p>
+								</div>
+							</div>
+					</div><div class="space-y-8 sm:px-8">
+						<div class="flex flex-row max-w-md">
+								<div class="mb-4 mr-4">
+									<div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary-500">
+										<svg viewBox="0 0 24 24" class="w-5 h-5 text-white" astro-icon="tabler:rocket"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon-tabler"><path d="M4 13a8 8 0 0 1 7 7 6 6 0 0 0 3-5 9 9 0 0 0 6-8 3 3 0 0 0-3-3 9 9 0 0 0-8 6 6 6 0 0 0-5 3"/><path d="M7 14a6 6 0 0 0-3 6 6 6 0 0 0 6-3"/><circle cx="15" cy="9" r="1"/></g></svg>
+									</div>
+								</div>
+								<div>
+									<h3 class="mb-3 text-xl font-bold">Excellent location</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.</p>
+								</div>
+							</div><div class="flex flex-row max-w-md">
+								<div class="mb-4 mr-4">
+									<div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary-500">
+										<svg viewBox="0 0 24 24" class="w-5 h-5 text-white" astro-icon="tabler:arrows-right-left"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon-tabler"><path d="M21 7H3M18 10l3-3-3-3M6 20l-3-3 3-3M3 17h18"/></g></svg>
+									</div>
+								</div>
+								<div>
+									<h3 class="mb-3 text-xl font-bold">Frequently updated</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.</p>
+								</div>
+							</div><div class="flex flex-row max-w-md">
+								<div class="mb-4 mr-4">
+									<div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary-500">
+										<svg viewBox="0 0 24 24" class="w-5 h-5 text-white" astro-icon="tabler:ballon"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon-tabler"><path d="M14 8a2 2 0 0 0-2-2"/><path d="M6 8a6 6 0 1 1 12 0c0 4.97-2.686 9-6 9s-6-4.03-6-9M12 17v1a2 2 0 0 1-2 2H7a2 2 0 0 0-2 2"/></g></svg>
+									</div>
+								</div>
+								<div>
+									<h3 class="mb-3 text-xl font-bold">Open to new ideas and contributions</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla.</p>
+								</div>
+							</div>
+					</div>
+		</div>
+	</div>
+</section><hr><hr><hr><hr><a id="coordinates" class="font-black hover:text-gray-900 dark:hover:text-white text-right transition duration-150 ease-in-out" href="/astrowind/#top">
+		Coordinates
+	</a><section>
+	<div class="max-w-6xl mx-auto px-4 sm:px-6 overflow-hidden">
+		<picture>
+			<source type="image/avif" srcset="/astrowind/assets/coordinates.62f33f10_17GHJz.avif 400w,/astrowind/assets/coordinates.62f33f10_ZKdNcw.avif 768w" sizes="(max-width: 768px) 100vw, 432px"><source type="image/webp" srcset="/astrowind/assets/coordinates.62f33f10_1Q2wHl.webp 400w,/astrowind/assets/coordinates.62f33f10_Z1RYeK.webp 768w" sizes="(max-width: 768px) 100vw, 432px"><source type="image/jpeg" srcset="/astrowind/assets/coordinates.62f33f10_cNnLh.jpg 400w,/astrowind/assets/coordinates.62f33f10_Z28YeG5.jpg 768w" sizes="(max-width: 768px) 100vw, 432px">
+			<img width="768" height="432" src="/astrowind/assets/coordinates.62f33f10_1fWRkk.jpg" loading="lazy" decoding="async" alt="coordinates" class="inset-0 object-cover object-top w-full rounded-md shadow-lg">
+		</picture>
+		<div class="py-12 md:py-20">
+			<div class="py-4 sm:py-6 lg:py-8">
+				<div class="flex flex-wrap md:-mx-8">
+					<div class="w-full lg:w-1/2 px-0 sm:px-8">
+						<div class="mb-12 lg:mb-0 pb-12 lg:pb-0 border-b lg:border-b-0">
+							<h2 class="mb-4 text-3xl lg:text-4xl font-bold font-heading">
+								Sed ac magna sit amet risus tristique interdum, at vel velit in hac habitasse platea dictumst.
+							</h2>
+
+							<p class="mb-8 text-xl text-gray-600 dark:text-slate-400">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi
+								risus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula.
+								Fusce sit amet dui tellus.
+							</p>
+
+							<div class="w-full">
+								<a class="btn text-white bg-primary-600 hover:bg-primary-800 mb-4 sm:mb-0" href="#" target="_blank" rel="noopener">Join us!</a>
+							</div>
+						</div>
+					</div>
+					<div class="w-full lg:w-1/2 px-0 sm:px-8">
+						<ul class="space-y-12">
+							<li class="flex md:-mx-4">
+								<div class="pr-4 sm:pl-4">
+									<span class="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold rounded-full bg-primary-50 text-primary-600">
+										1</span>
+								</div>
+								<div class="px-4">
+									<h3 class="mb-4 text-xl font-semibold font-heading">from point A</h3>
+									<p class="text-gray-500 dark:text-gray-400">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis
+										lobortis, mi risus tempus nulla.
+									</p>
+								</div>
+							</li>
+							<li class="flex md:-mx-4">
+								<div class="pr-4 sm:pl-4">
+									<span class="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold rounded-full bg-primary-50 text-primary-600">
+										2</span>
+								</div>
+								<div class="px-4">
+									<h3 class="mb-4 text-xl font-semibold font-heading">to point B</h3>
+									<p class="text-gray-500 dark:text-gray-400">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis
+										lobortis, mi risus tempus nulla.
+									</p>
+								</div>
+							</li>
+							<li class="flex md:-mx-4">
+								<div class="pr-4 sm:pl-4">
+									<span class="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold rounded-full bg-primary-50 text-primary-600">
+										3</span>
+								</div>
+								<div class="px-4">
+									<h3 class="mb-4 text-xl font-semibold font-heading">via point C</h3>
+									<p class="text-gray-500 dark:text-gray-400">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis
+										lobortis, mi risus tempus nulla.
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section><span>Questions</span><hr><hr><hr><hr><div class="px-4 py-16 mx-auto max-w-6xl lg:py-20">
+	<div class="max-w-xl sm:mx-auto lg:max-w-2xl">
+		<div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+			<h2 class="max-w-lg mb-4 text-3xl font-bold leading-none tracking-tight sm:text-4xl md:mx-auto font-heading">
+				Frequently Asked Questions
+			</h2>
+		</div>
+	</div>
+	<div class="max-w-screen-xl sm:mx-auto">
+		<div class="grid grid-cols-1 gap-x-8 gap-y-8 lg:gap-x-16 md:grid-cols-2">
+			<div class="space-y-8">
+						<div>
+								<p class="mb-4 text-xl font-bold">
+									<svg viewBox="0 0 24 24" class="w-7 h-7 text-primary-500 inline-block icon-bold" astro-icon="tabler:arrow-down-right"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon-tabler"><path d="m7 7 10 10M17 8v9H8"/></g></svg>
+									What do I need to start?
+								</p>
+								<p class="text-gray-700 dark:text-gray-400 mb-2">Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds.</p><p class="text-gray-700 dark:text-gray-400 mb-2">    Many say exploration is part of our destiny, but it’s actually our duty to future generations.</p>
+							</div><div>
+								<p class="mb-4 text-xl font-bold">
+									<svg viewBox="0 0 24 24" class="w-7 h-7 text-primary-500 inline-block icon-bold" astro-icon="tabler:arrow-down-right"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon-tabler"><path d="m7 7 10 10M17 8v9H8"/></g></svg>
+									How many crew can accompany me?
+								</p>
+								<p class="text-gray-700 dark:text-gray-400 mb-2">Well, the way they make shows is, they make one show. That show's called a pilot.</p><p class="text-gray-700 dark:text-gray-400 mb-2">    Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+							</div><div>
+								<p class="mb-4 text-xl font-bold">
+									<svg viewBox="0 0 24 24" class="w-7 h-7 text-primary-500 inline-block icon-bold" astro-icon="tabler:arrow-down-right"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon-tabler"><path d="m7 7 10 10M17 8v9H8"/></g></svg>
+									What&#39;s something that you completely don&#39;t understand?
+								</p>
+								<p class="text-gray-700 dark:text-gray-400 mb-2">A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.</p>
+							</div>
+					</div><div class="space-y-8">
+						<div>
+								<p class="mb-4 text-xl font-bold">
+									<svg viewBox="0 0 24 24" class="w-7 h-7 text-primary-500 inline-block icon-bold" astro-icon="tabler:arrow-down-right"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon-tabler"><path d="m7 7 10 10M17 8v9H8"/></g></svg>
+									What&#39;s an example of when you changed your mind?
+								</p>
+								<p class="text-gray-700 dark:text-gray-400 mb-2">Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.</p>
+							</div><div>
+								<p class="mb-4 text-xl font-bold">
+									<svg viewBox="0 0 24 24" class="w-7 h-7 text-primary-500 inline-block icon-bold" astro-icon="tabler:arrow-down-right"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon-tabler"><path d="m7 7 10 10M17 8v9H8"/></g></svg>
+									What is something that you would really like to try again?
+								</p>
+								<p class="text-gray-700 dark:text-gray-400 mb-2">A business big enough that it could be listed on the EARTH goes belly up. Disappears!</p><p class="text-gray-700 dark:text-gray-400 mb-2">      It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.</p>
+							</div><div>
+								<p class="mb-4 text-xl font-bold">
+									<svg viewBox="0 0 24 24" class="w-7 h-7 text-primary-500 inline-block icon-bold" astro-icon="tabler:arrow-down-right"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon-tabler"><path d="m7 7 10 10M17 8v9H8"/></g></svg>
+									If you could only ask one question to each person you meet, what would that question be?
+								</p>
+								<p class="text-gray-700 dark:text-gray-400 mb-2">This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.</p>
+							</div>
+					</div>
+		</div>
+	</div>
+</div><span>Statistics</span><hr><hr><hr><hr><div class="px-4 py-8 md:py-16 sm:px-6 mx-auto md:px-24 lg:px-8 lg:py-20 max-w-6xl">
+	<div class="grid grid-cols-2 row-gap-8 md:grid-cols-4">
+		<div class="text-center md:border-r dark:md:border-slate-500 mb-10 md:mb-0">
+			<div class="text-4xl font-bold lg:text-5xl xl:text-6xl text-primary-500 font-heading">132K</div>
+			<p class="text-sm font-medium tracking-widest text-gray-800 dark:text-slate-400 uppercase lg:text-base">
+				Downloads
+			</p>
+		</div>
+		<div class="text-center md:border-r dark:md:border-slate-500 mb-10 md:mb-0">
+			<div class="text-4xl font-bold lg:text-5xl xl:text-6xl text-primary-500 font-heading">24.8K</div>
+			<p class="text-sm font-medium tracking-widest text-gray-800 dark:text-slate-400 uppercase lg:text-base">Stars</p>
+		</div>
+		<div class="text-center md:border-r dark:md:border-slate-500 font-heading">
+			<div class="text-4xl font-bold lg:text-5xl xl:text-6xl text-primary-500">10.3K</div>
+			<p class="text-sm font-medium tracking-widest text-gray-800 dark:text-slate-400 uppercase lg:text-base">Forks</p>
+		</div>
+		<div class="text-center">
+			<div class="text-4xl font-bold lg:text-5xl xl:text-6xl text-primary-500 font-heading">48.4K</div>
+			<p class="text-sm font-medium tracking-widest text-gray-800 dark:text-slate-400 uppercase lg:text-base">Users</p>
+		</div>
+	</div>
+</div><span>Action</span><hr><hr><hr><hr><section class="relative">
+	<div class="max-w-6xl mx-auto px-4 sm:px-6">
+		<div class="py-12 md:py-20">
+			<div class="max-w-3xl mx-auto text-center p-6 rounded-md shadow-xl dark:shadow-none">
+				<h2 class="text-4xl md:text-4xl font-bold leading-tighter tracking-tighter mb-4 font-heading">
+					<span>we</span> + <br class="block sm:hidden"><span class="sm:whitespace-nowrap">you</span>
+				</h2>
+				<p class="text-xl text-gray-600 dark:text-slate-400">
+					Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline">Don't
+					waste more time! :P
+				</p>
+
+				<div class="mt-6">
+					<a class="btn text-white bg-primary-600 hover:bg-primary-800 mb-4 sm:mb-0" href="#" target="_blank" rel="noopener">Join us!</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	</main><footer class="border-t border-gray-200 dark:border-slate-800">
+	<div class="max-w-6xl mx-auto px-4 sm:px-6">
+		<div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 py-8 md:py-12"></div>
+		<div class="md:flex md:items-center md:justify-between py-6 md:py-8">
+			<ul class="flex mb-4 md:order-1 -ml-2 md:ml-4 md:mb-0">
+				<li></li>
+				<img src="logo.webp" alt="3k" width="100">
+			</ul>
+			<p class="text-5xl">2022&circledcirc;</p>
+			<!-- <Icon name="tabler:creative-commons" class="w-10 h-10" /> -->
+			<div class="text-sm text-gray-700 mr-4 dark:text-slate-400">
+				<svg viewBox="0 0 24 24" class="w-5 h-5" astro-icon="tabler:brand-github"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+				Made by <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://github.com/triskel-es">Triskel</a>
+				<a class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm inline-flex items-center" aria-label="Github" href="https://github.com/triskel-es">
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
+		<script>
+	// Set "light" theme as default
+	// if (!localStorage.theme) {
+	//   localStorage.theme = "light";
+	// }
+
+	if (
+		localStorage.theme === 'dark' ||
+		(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+	) {
+		document.documentElement.classList.add('dark');
+	} else {
+		document.documentElement.classList.remove('dark');
+	}
+
+	function attachEvent(selector, event, fn) {
+		const matches = document.querySelectorAll(selector);
+		if (matches && matches.length) {
+			matches.forEach((elem) => {
+				elem.addEventListener(event, () => fn(elem), false);
+			});
+		}
+	}
+
+	window.onload = function () {
+		attachEvent('[data-aw-toggle-menu]', 'click', function (elem) {
+			elem.classList.toggle('expanded');
+			document.body.classList.toggle('overflow-hidden');
+			document.getElementById('header')?.classList.toggle('h-screen');
+			document.querySelector('#header nav')?.classList.toggle('hidden');
+		});
+
+		attachEvent('[data-aw-toggle-color-scheme]', 'click', function () {
+			document.documentElement.classList.toggle('dark');
+			localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+		});
+
+		attachEvent('[data-aw-social-share]', 'click', function (elem) {
+			const network = elem.getAttribute('data-aw-social-share');
+			const url = encodeURIComponent(elem.getAttribute('data-aw-url'));
+			const text = encodeURIComponent(elem.getAttribute('data-aw-text'));
+
+			let href;
+			switch (network) {
+				case 'facebook':
+					href = `https://www.facebook.com/sharer.php?u=${url}`;
+					break;
+				case 'twitter':
+					href = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
+					break;
+				case 'linkedin':
+					href = `https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${text}`;
+					break;
+				case 'whatsapp':
+					href = `https://wa.me/?text=${text}%20${url}`;
+					break;
+				case 'mail':
+					href = `mailto:?subject=%22${text}%22&body=${text}%20${url}`;
+					break;
+
+				default:
+					return;
+			}
+
+			const newlink = document.createElement('a');
+			newlink.target = '_blank';
+			newlink.href = href;
+			newlink.click();
+		});
+	};
+	window.onpageshow = function () {
+		const elem = document.querySelector('[data-aw-toggle-menu]');
+		if (elem) {
+			elem.classList.remove('expanded');
+		}
+		document.body.classList.remove('overflow-hidden');
+		document.getElementById('header')?.classList.remove('h-screen');
+		document.querySelector('#header nav')?.classList.add('hidden');
+	};
+</script>
+
+		
+	</body>
+</html>

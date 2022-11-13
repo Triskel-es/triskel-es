@@ -1,0 +1,10 @@
+{
+  "site": {
+    "title": "Mi texto con i18",
+    "description": "Voici la description de mon super site web !"
+  },
+  "hero": {
+    "title": "Todo lo que necesitas es ",
+    "subtitle": "This is a <0>more complex</0> string to translate, mixed with <1>html elements</1>, such as a <2>a cool link</2>!"
+  }
+}
