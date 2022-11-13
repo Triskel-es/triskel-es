@@ -22,17 +22,48 @@ const meta = {
 ---
 
 <Layout {meta}>
+	<p id="top"></p><hr /><hr /><hr /><hr />
 	<Swiper />
 	<Hero />
 	<p>Works</p><hr /><hr /><hr /><hr />
 	<HighlightedPosts />
-	<p>Roots</p><hr /><hr /><hr /><hr />
+	<hr /><hr /><hr /><hr />
+	<a
+		id="roots"
+		class="font-black hover:text-gray-900 dark:hover:text-white text-right transition duration-150 ease-in-out"
+		href={getHomePermalink() + '#top'}
+	>
+		Roots
+	</a>
 	<Steps />
-	<span>Elements</span><hr /><hr /><hr /><hr />
+	<span></span><hr /><hr /><hr /><hr />
+	<hr /><hr /><hr /><hr />
+	<a
+		id="elements"
+		class="font-black hover:text-gray-900 dark:hover:text-white text-right transition duration-150 ease-in-out"
+		href={getHomePermalink() + '#top'}
+	>
+		Elements
+	</a>
 	<Features />
-	<span>Space</span><hr /><hr /><hr /><hr />
+	<span></span><hr /><hr /><hr /><hr />
+	<hr /><hr /><hr /><hr />
+	<a
+		id="space"
+		class="font-black hover:text-gray-900 dark:hover:text-white text-right transition duration-150 ease-in-out"
+		href={getHomePermalink() + '#top'}
+	>
+		Space
+	</a>
 	<Features2 />
-	<span>Coordinates</span><hr /><hr /><hr /><hr />
+	<hr /><hr /><hr /><hr />
+	<a
+		id="coordinates"
+		class="font-black hover:text-gray-900 dark:hover:text-white text-right transition duration-150 ease-in-out"
+		href={getHomePermalink() + '#top'}
+	>
+		Coordinates
+	</a>
 	<Features3 />
 	<span>Questions</span><hr /><hr /><hr /><hr />
 	<FAQs />
