@@ -2,7 +2,7 @@ export const SITE = {
 	name: 'Triskel',
 
 	origin: 'https://triskel-es.github.io',
-	basePathname: '/',
+	basePathname: '/triskel-es',
 	trailingSlash: false,
 
 	title: 'Triskel',
